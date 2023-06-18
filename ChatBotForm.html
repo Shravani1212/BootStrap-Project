@@ -4,6 +4,18 @@
   <title>Form Example</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <style>
+     .error-message {
+            color: red;
+            margin-top: 5px;
+        }
+
+        .fields {
+            margin-top: 10px;
+        }
+
+        .fields div {
+            margin-top: 10px;
+        }
     .error {
       color: red;
     }
@@ -35,6 +47,12 @@
       font-family: "Roboto";
       margin: 10px;
     }
+    h1 {
+            transition: color 0.5s ease-in-out;
+        }
+        h1:focus {
+            color: red;
+        }
   </style>
 </head>
 <body>
@@ -50,166 +68,85 @@
       <div class="col-12 col-md-6">
         <form>
           <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter Your Name">
-            <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter Your Name">
+              <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <p id="rename1" class="error-message"></p>
           </div>
           <div class="form-group">
-            <label class="sr-only" for="email">Email</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text">@</div>
+              <label class="sr-only" for="email">Email</label>
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                      <div class="input-group-text">@</div>
+                  </div>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  <p id="rename" class="error-message"></p>
               </div>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email">
-            </div>
           </div>
           <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
           </div>
           <div class="form-group">
-            <label for="exampleFormControlFile1">Upload photo</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              <label for="exampleFormControlFile1">Upload photo</label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
           </div>
           <div class="form-group">
-            <label>Choose your interested field</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="Entertainment" value="Entertainment" checked>
-              <label class="form-check-label" for="exampleRadios1">
-                Entertainment
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="Knowledge" value="Knowledge">
-              <label class="form-check-label" for="exampleRadios2">
-                Knowledge
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="Shopping" value="Shopping">
-              <label class="form-check-label" for="exampleRadios2">
-                Shopping
-              </label>
-            </div>
+              <label>Choose your interested field</label>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="Entertainment" value="Entertainment" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                      Entertainment
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="Knowledge" value="Knowledge">
+                  <label class="form-check-label" for="exampleRadios2">
+                      Knowledge
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="Shopping" value="Shopping">
+                  <label class="form-check-label" for="exampleRadios2">
+                      Shopping
+                  </label>
+              </div>
           </div>
           <div class="fields">
-            <div id="entertainment_fields">
-              <label class="mr-sm-2" for="inlineFormCustomSelect">Interested Fields</label>
-              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected>Choose...</option>
-                <option value="1">Jokes</option>
-                <option value="2">Poems</option>
-              </select>
-            </div>
-            <div id="knowledge_fields" class="d-none">
-              <label class="mr-sm-2" for="inlineFormCustomSelect">Interested Fields</label>
-              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected>Choose...</option>
-                <option value="1">Quiz on jQuery</option>
-                <option value="2">Read content</option>
-              </select>
-            </div>
-            <div id="shopping_fields" class="d-none">
-              <label class="mr-sm-2" for="inlineFormCustomSelect">Interested Fields</label>
-              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected>Choose...</option>
-                <option value="1">E-Commerce</option>
-                <option value="2">Food-Munch</option>
-              </select>
-            </div>
+              <div id="entertainment_fields">
+                  <label class="mr-sm-2" for="entertainmentFieldSelect">Interested Fields</label>
+                  <select class="custom-select mr-sm-2" id="entertainmentFieldSelect">
+                      <option selected>Choose...</option>
+                      <option value="1">Jokes</option>
+                      <option value="2">Poems</option>
+                  </select>
+              </div>
+              <div id="knowledge_fields" class="d-none">
+                  <label class="mr-sm-2" for="knowledgeFieldSelect">Interested Fields</label>
+                  <select class="custom-select mr-sm-2" id="knowledgeFieldSelect">
+                      <option selected>Choose...</option>
+                      <option value="1">Quiz on jQuery</option>
+                      <option value="2">Read content</option>
+                  </select>
+              </div>
+              <div id="shopping_fields" class="d-none">
+                  <label class="mr-sm-2" for="shoppingFieldSelect">Interested Fields</label>
+                  <select class="custom-select mr-sm-2" id="shoppingFieldSelect">
+                      <option selected>Choose...</option>
+                      <option value="1">E-Commerce</option>
+                      <option value="2">Food-Munch</option>
+                  </select>
+              </div>
           </div>
           <button type="submit" class="btn btn-primary mt-2" id="submit">Submit</button>
-        </form>
+      </form>
+  
+      
       </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $("#submit").click(function(e) {
-      e.preventDefault(); // Prevent form submission
-
-      if (validateForm()) {
-        let name = $("#name").val();
-        let email = $("#email").val();
-        let password = $("#password").val();
-        let photo = $("#exampleFormControlFile1").val();
-        let interestedField = $("input[name='exampleRadios']:checked").val();
-        let selectedOption = $("#inlineFormCustomSelect option:selected").text();
-
-        // Perform any processing of form data here
-
-        // Example: Submit the form data to a server or perform desired actions
-
-        // Clear form fields
-        $("#name").val("");
-        $("#email").val("");
-        $("#password").val("");
-        $("#exampleFormControlFile1").val("");
-        $("#inlineFormCustomSelect").val("Choose...");
-      }
-    });
-
-    function validateForm() {
-      let isValid = true;
-
-      // Clear previous error messages
-      $(".error").text("");
-
-      // Validate Name field
-      let name = $("#name").val();
-      if (name === "") {
-        $("#nameHelp").text("Please enter your name");
-        isValid = false;
-      }
-
-      // Validate Email field
-      let email = $("#email").val();
-      if (email === "") {
-        $("#email").after("<span class='error'>Please enter your email</span>");
-        isValid = false;
-      } else if (!validateEmail(email)) {
-        $("#email").after("<span class='error'>Please enter a valid email address</span>");
-        isValid = false;
-      }
-
-      // Validate Password field
-      let password = $("#password").val();
-      if (password === "") {
-        $("#password").after("<span class='error'>Please enter your password</span>");
-        isValid = false;
-      }
-
-      // Validate Photo field
-      let photo = $("#exampleFormControlFile1").val();
-      if (photo === "") {
-        $("#exampleFormControlFile1").after("<span class='error'>Please upload a photo</span>");
-        isValid = false;
-      }
-
-      // Validate Interested Field selection
-      let interestedField = $("input[name='exampleRadios']:checked").val();
-      if (!interestedField) {
-        $("#interested_field").after("<span class='error'>Please choose your interested field</span>");
-        isValid = false;
-      }
-
-      // Validate Selected Option
-      let selectedOption = $("#inlineFormCustomSelect option:selected").text();
-      if (selectedOption === "Choose...") {
-        $("#inlineFormCustomSelect").after("<span class='error'>Please select an option</span>");
-        isValid = false;
-      }
-
-      return isValid;
-    }
-
-    function validateEmail(email) {
-      // Email validation logic goes here
-      return true;
-    }
-  });
-</script>
+  <script src="formvalidations.js"></script>
 </body>
 </html>

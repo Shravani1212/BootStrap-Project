@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Order and Payment Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .form-group input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 3px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    #selectedFoodItems {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Food Order and Payment</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label>Food Items</label><br>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" id="pizza" name="food[]" value="Pizza" class="form-check-input">
+          <label for="pizza" class="form-check-label">Pizza</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" id="burger" name="food[]" value="Burger" class="form-check-input">
+          <label for="burger" class="form-check-label">Burger</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" id="pasta" name="food[]" value="Pasta" class="form-check-input">
+          <label for="pasta" class="form-check-label">Pasta</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" id="sushi" name="food[]" value="Sushi" class="form-check-input">
+          <label for="sushi" class="form-check-label">Sushi</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" id="salad" name="food[]" value="Salad" class="form-check-input">
+          <label for="salad" class="form-check-label">Salad</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="payment">Payment Method</label>
+        <select id="payment" name="payment" required>
+          <option value="">Select Payment Method</option>
+          <option value="credit_card">Credit Card</option>
+          <option value="debit_card">Debit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="cash">Cash on Delivery</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="address">Delivery Address</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" id="#place-orderbtn">Place Order</button>
+      <div id="selectedFoodItems"></div>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    
+    $('input[name="food[]"]').change(function() {
+      var selectedFoodItems = [];
+      $('input[name="food[]"]:checked').each(function() {
+        selectedFoodItems.push($(this).val());
+      });
+      $('#selectedFoodItems').text('Selected Food Items: ' + selectedFoodItems.join(', '));
+    });
+  </script>
+</body>
+</html>

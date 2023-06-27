@@ -1,4 +1,7 @@
+
+
 $(document).ready(function() {
+    console.log("asda");
     $("#name").change(function() {
       var name = $(this).val();
       var rename1 = $("#rename1");
@@ -9,10 +12,19 @@ $(document).ready(function() {
         rename1.text('');
       }
     });
-  
+    $("#email").on("input", function() {
+        var email = $(this).val();
+        var rename = $("#rename");
+    
+        if (email === '') {
+          rename.text("*required");
+        } else {
+          rename.text('');
+        }
+      });
     $("#submit").click(function(event) {
       event.preventDefault();
-  
+      
       var name = $("#name").val();
       var email = $("#email").val();
       var password = $("#password").val();
@@ -51,5 +63,6 @@ $(document).ready(function() {
     $("input").blur(function() {
       $(this).removeClass("active-input");
     });
+    
   });
   

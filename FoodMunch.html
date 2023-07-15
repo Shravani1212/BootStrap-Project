@@ -50,7 +50,7 @@
             </div>
         </div>
     </nav>
-    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column" id="bannerSection">
         <div class="text-center">
             <h1 class="banner-heading mb-3">Get Delicious Food Anytime</h1>
             <p class="banner-caption mb-4">Eat Smart & Healthy</p>
@@ -735,7 +735,12 @@
           </div>
       </div>
   </div>
-  
+  <div>
+    <a href="#bannerSection"> <button id="scrollToTopBtn" onclick="scrollToTop()" style="background-color: yellow; border-radius: 50%; padding:10px; padding-left: 15px; padding-right: 15px;
+    font-size: 30px; font-weight: bold; border: none; position: fixed;
+  bottom: 20px;
+  right: 30px;">&#8593;</button></a>
+  </div>
     <div class="modal fade " id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-with-bg-image" role="document">
           <div class="modal-content">

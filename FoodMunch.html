@@ -2,23 +2,30 @@
 <html>
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
     <link href="FoodMunch.css" rel="stylesheet"/>
+    <title>Welcome To Food Munch</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow p-0" id="navbar-example2">
         
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo" />
-            </a>
+              <img src="chef.gif" height="80px" width="80px"/>
+              </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,7 +37,15 @@
                     </a>
                     <a class="nav-link" href="#exploreMenuSection" id="navItem2">Explore Menu</a>
                     <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Delivery & Payment</a>
-                    <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4" >Follow Us</a>
+                    <a style="padding-left: 10px;">
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" id="search-btn">Search</button>
+                      </form>
+                    </a>
+                  
+                    
                 </div>
             </div>
         </div>
@@ -43,8 +58,8 @@
             <a href="#exploreMenuSection"><button class="custom-outline-button" data-toggle="modal" data-target="#orderModal">Order Now</button></a>
         </div>
     </div>
-
-    <div class="wcu-section pt-5 pb-5" id="wcuSection">
+ <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <div class="wcu-section pt-5 pb-5" id="wcuSection" >
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -54,7 +69,7 @@
                         items.
                     </p>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 menu-card">
                     <div class="wcu-card p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" class="wcu-card-image" />
                         <h1 class="wcu-card-title mt-3">Food Service</h1>
@@ -65,7 +80,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 menu-card">
                     <div class="wcu-card p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png" class="wcu-card-image" />
                         <h1 class="wcu-card-title mt-3">Fresh Food</h1>
@@ -76,7 +91,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 menu-card">
                     <div class="wcu-card p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png" class="wcu-card-image" />
                         <h1 class="wcu-card-title mt-3">Best Offers</h1>
@@ -84,6 +99,7 @@
                             Food Coupons & Offers upto
                             <span class="offers">50% OFF</span>
                             and Exclusive Promo Codes on All Online Food Orders.
+                            Avail the Offer immediately.Don't Waste Your Time.
                         </p>
                     </div>
                 </div>
@@ -96,11 +112,11 @@
                 <div class="col-12">
                     <h1 class="menu-section-heading">Explore Menu</h1>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 menu-card" >
                     <div class="shadow menu-item-card p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Non-Veg Starters</h1>
-                        <a href="" class="menu-item-link">
+                        <a href="#accordionExample" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -108,11 +124,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 menu-card">
                     <div class="shadow menu-item-card p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Veg Starters</h1>
-                        <a href="" class="menu-item-link">
+                        <a href="#accordionExample" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -120,11 +136,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 menu-card">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Soups</h1>
-                        <a href="" class="menu-item-link">
+                        <a href="#accordionExample" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -132,11 +148,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 menu-card">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Fish & Sea food</h1>
-                        <a href="" class="menu-item-link">
+                        <a href="#accordionExample" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -144,11 +160,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 menu-card">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Main Course</h1>
-                        <a href="" class="menu-item-link">
+                        <a href="#accordionExample" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -156,11 +172,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 menu-card">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Noodles</h1>
-                        <a href="" class="menu-item-link">
+                        <a href="#accordionExample" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -168,11 +184,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 menu-card">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Salads</h1>
-                        <a href="" class="menu-item-link">
+                        <a href="#accordionExample" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -180,11 +196,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 menu-card">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Desserts</h1>
-                        <a href="" class="menu-item-link">
+                        <a href="#accordionExample" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -195,13 +211,394 @@
             </div>
         </div>
     </div>
+    <div class="d-flex flex-row justify-content-center">
+        
+        <img src="emojis1.jfif" width="15%" height="30px"/>
+        <img src="emojis1.jfif" width="15%" height="30px"/>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Non Veg Starters
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="row">
+                <ol style="padding-right: 100px;" class="col-12 col-md-6">
+                    <li data-toggle="tooltip" data-placement="left" title="Click  to Order" onclick="prompt('Your order has been confirmed please enter your address')">Chicken Spring Rolls <strong>$120</strong></li>
+                    <li data-toggle="tooltip" data-placement="left" title="Click  to Order">Chilli Prawns  <strong>$120</strong></li>
+                    <li data-toggle="tooltip" data-placement="left" title="Click  to Order">Chicken Manchuria  <strong>$120</strong></li>
+                    <li data-toggle="tooltip" data-placement="left" title="Click  to Order">Fish Fry  <strong>$120</strong></li>
+                    <li data-toggle="tooltip" data-placement="left" title="Click  to Order">Chicken Magestic  <strong>$120</strong></li>
+                    <li data-toggle="tooltip" data-placement="left" title="Click  to Order">Chicken Spring Rolls  <strong>$120</strong></li>
+                    <li data-toggle="tooltip" data-placement="left" title="Click  to Order">Chilli Prawns  <strong>$120</strong></li>
+                </ol>
+                <div id="carouselExampleCaptions0" class="carousel slide carousel-fade col-md-6" data-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions0" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions0" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner cr-inner" >
+                      <div class="carousel-item active it" data-bs-interval="1000">
+                        <img src="nonveg1.jpeg" class="d-block w-100" alt="..." style="background-color: rgba(0,0,0,0.5);">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Chilli Prawns</h5>
+                          <p>Slightly roasted and Served Fresh</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item it"  data-bs-interval="1000">
+                        <img src="nonveg2.jfif" class="d-block w-100" alt="..." >
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Chicken Magestic</h5>
+                          <p>Yumm Yumm!!!</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item it"  data-bs-interval="1000">
+                        <img src="nonveg3.png" class="d-block w-100" alt="..." >
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Chicken Manchurian</h5>
+                          <p>Taste the spice and crisp!!!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions0" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions0" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Veg Starters
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="row">
+                    <ol style="padding-right: 100px;" class="col-12 col-md-6">
+                        <li>Chicken Spring Rolls</li>
+                        <li>Chilli Prawns</li>
+                        <li>Chicken Manchuria</li>
+                        <li>Fish Fry</li>
+                        <li>Chicken Magestic</li>
+                        <li>Chicken Spring Rolls</li>
+                        <li>Chilli Prawns</li>
+                    </ol>
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade col-md-6">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner" style="width:400px; height:200px;">
+                          <div class="carousel-item active">
+                            <img src="nonveg1.jpeg" class="d-block w-100" alt="..." style="background-color: rgba(0,0,0,0.5);">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Chilli Prawns</h5>
+                              <p>Slightly roasted and Served Fresh</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" style="width:400px; height:200px;">
+                            <img src="nonveg2.jfif" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Chicken Magestic</h5>
+                              <p>Yumm Yumm!!!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" style="width:400px; height:200px;">
+                            <img src="nonveg3.png" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Chicken Manchurian</h5>
+                              <p>Taste the spice and crisp!!!</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Noodles
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="row">
+                    <ol style="padding-right: 100px; " class="col-12 col-md-6">
+                        <li>Chicken Spring Rolls</li>
+                        <li>Chilli Prawns</li>
+                        <li>Chicken Manchuria</li>
+                        <li>Fish Fry</li>
+                        <li>Chicken Magestic</li>
+                        <li>Chicken Spring Rolls</li>
+                        <li>Chilli Prawns</li>
+                    </ol>
+                    <div id="carouselExampleCaptions1" class="carousel slide carousel-fade col-md-6">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner" style="width:400px; height:200px;">
+                          <div class="carousel-item active">
+                            <img src="nonveg1.jpeg" class="d-block w-100" alt="..." style="background-color: rgba(0,0,0,0.5);">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Chilli Prawns</h5>
+                              <p>Slightly roasted and Served Fresh</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" style="width:400px; height:200px;">
+                            <img src="nonveg2.jfif" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Chicken Magestic</h5>
+                              <p>Yumm Yumm!!!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" style="width:400px; height:200px;">
+                            <img src="nonveg3.png" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Chicken Manchurian</h5>
+                              <p>Taste the spice and crisp!!!</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Desserts
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="row">
+                    <ol style="padding-right: 100px;" class="col-12 col-md-6">
+                        <li>Chicken Spring Rolls</li>
+                        <li>Chilli Prawns</li>
+                        <li>Chicken Manchuria</li>
+                        <li>Fish Fry</li>
+                        <li>Chicken Magestic</li>
+                        <li>Chicken Spring Rolls</li>
+                        <li>Chilli Prawns</li>
+                    </ol>
+                    <div id="carouselExampleCaptions2" class="carousel slide carousel-fade col-md-6">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner" style="width:400px; height:200px;">
+                          <div class="carousel-item active">
+                            <img src="Pie.jpeg" class="d-block w-100" alt="..." style="background-color: rgba(0,0,0,0.5);">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Soft Pie</h5>
+                              <p>Fill your heart With Sweet</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" style="width:400px; height:200px;">
+                            <img src="cake.jpeg" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Ice Cream</h5>
+                              <p>Tanda Tanda Just Chill!!!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" style="width:400px; height:200px;">
+                            <img src="pastry.jpeg" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Pastry</h5>
+                              <p>Taste Our Pastry and remember the history!!!</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Soups
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="d-flex flex-row">
+                  <div class="row">
+                    <ol style="padding-right: 100px;" class="col-12 col-md-6">
+                        <li>Chicken Spring Rolls</li>
+                        <li>Chilli Prawns</li>
+                        <li>Chicken Manchuria</li>
+                        <li>Fish Fry</li>
+                        <li>Chicken Magestic</li>
+                        <li>Chicken Spring Rolls</li>
+                        <li>Chilli Prawns</li>
+                    </ol>
+                    <div id="carouselExampleCaptions3" class="carousel slide carousel-fade col-md-6">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner" style="width:400px; height:200px;">
+                          <div class="carousel-item active">
+                            <img src="nonveg1.jpeg" class="d-block w-100" alt="..." style="background-color: rgba(0,0,0,0.5);">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Chilli Prawns</h5>
+                              <p>Slightly roasted and Served Fresh</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" style="width:400px; height:200px;">
+                            <img src="nonveg2.jfif" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Chicken Magestic</h5>
+                              <p>Yumm Yumm!!!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" style="width:400px; height:200px;">
+                            <img src="nonveg3.png" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Chicken Manchurian</h5>
+                              <p>Taste the spice and crisp!!!</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Sea Food
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="row">
+                    <ol style="padding-right: 100px;" class="col-12 col-md-6">
+                        <li>Chicken Spring Rolls</li>
+                        <li>Chilli Prawns</li>
+                        <li>Chicken Manchuria</li>
+                        <li>Fish Fry</li>
+                        <li>Chicken Magestic</li>
+                        <li>Chicken Spring Rolls</li>
+                        <li>Chilli Prawns</li>
+                    </ol>
+                    <div id="carouselExampleCaptions4" class="carousel slide carousel-fade col-md-6">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner" style="width:400px; height:200px;">
+                          <div class="carousel-item active">
+                            <img src="nonveg1.jpeg" class="d-block w-100" alt="..." style="background-color: rgba(0,0,0,0.5);">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Chilli Prawns</h5>
+                              <p>Slightly roasted and Served Fresh</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" style="width:400px; height:200px;">
+                            <img src="nonveg2.jfif" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Chicken Magestic</h5>
+                              <p>Yumm Yumm!!!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" style="width:400px; height:200px;">
+                            <img src="nonveg3.png" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Chicken Manchurian</h5>
+                              <p>Taste the spice and crisp!!!</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    
     <div class="healthy-food-section pt-5 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-5">
                     <div class="text-center">
                         <!-- <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png" class="healthy-food-section-img" /> -->
-                        <div class="embed-responsive embed-responsive-1by1" style="height:200px; width:270px;">
+                        <div class="embed-responsive embed-responsive-1by1" id="video-embed" >
                             <iframe class="embed-responsive-item" src="videoplayback.mp4" ></iframe>
                           </div>
                     </div>
@@ -221,6 +618,7 @@
             </div>
         </div>
     </div>
+
     <div class="delivery-and-payment-section pt-5 pb-5" id="deliveryPaymentSection">
         <div class="container">
             <div class="row">
@@ -255,7 +653,9 @@
     <div class="thanking-customers-section pt-5 pb-5">
         <div class="container">
             <div class="row">
+              
                 <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                  <img src="bird.gif" height="50px" width="80px"/>
                     <h1 class="thanking-customers-section-heading">
                         Thank you for being a valuable customer to us.
                     </h1>
@@ -288,13 +688,13 @@
                 </div>
                 <div class="col-12">
                     <div class="d-flex flex-row justify-content-center">
-                        <div class="follow-us-icon-container">
+                        <div class="follow-us-icon-container" id="icon1">
                             <i class="fab fa-twitter icon"></i>
                         </div>
-                        <div class="follow-us-icon-container">
+                        <div class="follow-us-icon-container" id="icon2">
                             <i class="fab fa-instagram icon"></i>
                         </div>
-                        <div class="follow-us-icon-container">
+                        <div class="follow-us-icon-container" id="icon3">
                             <i class="fab fa-facebook icon"></i>
                         </div>
                     </div>
@@ -302,21 +702,42 @@
             </div>
         </div>
     </div>
+   
     <div class="footer-section pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" class="food-munch-logo" />
-                    <h1 class="footer-section-mail-id">orderfood@foodmunch.com</h1>
-                    <p class="footer-section-address">
-                        123 Ayur Vigyan Nagar, New Delhi, India.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 text-center">
+                  <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" class="food-munch-logo" />
+                  <h1 class="footer-section-mail-id">orderfood@foodmunch.com</h1>
+                  <p class="footer-section-address">
+                      123 Ayur Vigyan Nagar, New Delhi, India.
+                  </p>
+              </div>
+          </div>
+          <div class="row mt-5 subfooter">
+              <div class="col-md-4">
+                
+                  <h4>Opening Hours</h4>
+                  <img src="we-are-open-open.gif" height="100px" width="150px"/>
+                  <p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+                  <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+              </div>
+              <div class="col-md-4">
+                  <h4>Contact Information</h4>
+                  <p>Phone: +91 1234567890</p>
+                  <p>Email: info@foodmunch.com</p>
+              </div>
+              <div class="col-md-4">
+                  <h4>Follow Us</h4>
+                  <p>Facebook: <a href="https://www.facebook.com/foodmunch">foodmunch</a></p>
+                  <p>Instagram: <a href="https://www.instagram.com/foodmunch">foodmunch</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+    <div class="modal fade " id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-with-bg-image" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="orderModalLabel">Food Order and Payment</h5>
@@ -373,6 +794,7 @@
             
            
     </div>
+    
             <div class="modal-footer">
               
              
@@ -384,7 +806,7 @@
       
      
     </div>
-    
+    </div>
       
     
     <div class="selected-food-items mt-4"></div>

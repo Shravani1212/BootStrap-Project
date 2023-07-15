@@ -1,5 +1,20 @@
 $(document).ready(function() {
   
+  
+  $("li").click(function(){
+    let address=prompt('Your order has been confirmed please eneter your your address')
+    if(address!==null){
+      alert(`Thank you for ordering 
+    We will shortly place your order at location ${address}
+    hope you will enjoy the meal!!!
+     happy Meal;;;`)
+      
+    }
+    else{
+      alert(`Sorry You haven't orders anything`)
+    }
+  })
+
   $("#glitter-button").click(function() {
     // Generate a random position within the container
     var containerWidth = $("#glitter-container").width();
@@ -49,15 +64,12 @@ function placeOrder() {
   var paymentMethod = $("#payment").val();
   var address = $("#address").val();
 
-  // Perform further processing or validation if needed
-
-  // Display selected food items
   $(".selected-food-items").html("Selected Food Items: " + selectedFoodItems.join(", "));
 
-  // Show alert message
-  var message = "Order Placed!\n\nName: " + name + "\nEmail: " + email + "\nSelected Food Items: " + selectedFoodItems.join(", ") + "\nPayment Method: " + paymentMethod + "\nDelivery Address: " + address;
+ 
+  var message = "Order Placed!\n\nName: " + name + "\nEmail: " + email + "\nSelected Food Items: " + selectedFoodItems.join(", ") + "\nPayment Method: " + paymentMethod + "\nDelivery Address: " + address +"Thank You For Ordering Enjoy the taste!!! have a Nice day!!!";
   alert(message);
-
-  // Close the modal
+//  alert(<img src="food truck.jpg"/>)
+ 
   $("#orderModal").modal("hide");
 }

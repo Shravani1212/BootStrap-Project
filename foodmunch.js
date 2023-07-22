@@ -1,5 +1,25 @@
 $(document).ready(function() {
   
+  window.onscroll = function() {
+    scrollFunction();
+  };
+  
+  function scrollFunction() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    var bannerSection = document.getElementById("exploreMenuSection"); // Change this to the ID of the section where you want the button to appear
+  
+    if (document.body.scrollTop > bannerSection.offsetTop || document.documentElement.scrollTop > bannerSection.offsetTop) {
+      scrollToTopBtn.classList.add("show");
+    } else {
+      scrollToTopBtn.classList.remove("show");
+    }
+  }
+  
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  
   
   $("li").click(function(){
     let address=prompt('Your order has been confirmed please eneter your your address')
@@ -72,4 +92,5 @@ function placeOrder() {
 //  alert(<img src="food truck.jpg"/>)
  
   $("#orderModal").modal("hide");
+  
 }

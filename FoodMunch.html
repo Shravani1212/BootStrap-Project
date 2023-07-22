@@ -14,17 +14,12 @@
     <title>Welcome To Food Munch</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
-
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow p-0" id="navbar-example2">
-        
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow p-0" id="navbar-example2">        
         <div class="container">
             <a class="navbar-brand" href="#">
               <img src="chef.gif" height="50px" width="50px" class="ml-0 p-0"/>
-
                 <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo" />
               </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,8 +40,7 @@
                         <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" id="search-btn">Search</button>
                       </form>
                     </a>
-                  
-                    
+                    <a class="nav-link" href="#" id="navItem5">Login <i class="fas fa-sign-in-alt" style="font-size:larger"></i></a> 
                 </div>
             </div>
         </div>
@@ -59,7 +53,7 @@
             <a href="#exploreMenuSection"><button class="custom-outline-button" data-toggle="modal" data-target="#orderModal">Order Now</button></a>
         </div>
     </div>
- <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+ <div >
     <div class="wcu-section pt-5 pb-5" id="wcuSection" >
         <div class="container">
             <div class="row">
@@ -70,7 +64,7 @@
                         items.
                     </p>
                 </div>
-                <div class="col-12 col-md-4 menu-card">
+                <div class="col-sm-5 col-md-4 menu-card">
                     <div class="wcu-card p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" class="wcu-card-image" />
                         <h1 class="wcu-card-title mt-3">Food Service</h1>
@@ -81,7 +75,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 menu-card">
+                <div class="col-sm-6 col-md-4 menu-card">
                     <div class="wcu-card p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png" class="wcu-card-image" />
                         <h1 class="wcu-card-title mt-3">Fresh Food</h1>
@@ -92,7 +86,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 menu-card">
+                <div class="col-sm-11 col-md-4 menu-card">
                     <div class="wcu-card p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png" class="wcu-card-image" />
                         <h1 class="wcu-card-title mt-3">Best Offers</h1>
@@ -107,13 +101,14 @@
             </div>
         </div>
     </div>
+    
     <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h1 class="menu-section-heading">Explore Menu</h1>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 menu-card" >
+                <div class="col-sm-6 col-md-3 col-lg-3 menu-card" >
                     <div class="shadow menu-item-card p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Non-Veg Starters</h1>
@@ -125,7 +120,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 menu-card">
+                <div class="col-sm-6 col-md-3 col-lg-3 menu-card">
                     <div class="shadow menu-item-card p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Veg Starters</h1>
@@ -137,7 +132,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 menu-card">
+                <div class="col-sm-6 col-md-3 col-lg-3 menu-card">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Soups</h1>
@@ -149,7 +144,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 menu-card">
+                <div class="col-sm-6 col-md-3 col-lg-3 menu-card">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Fish & Sea food</h1>
@@ -161,7 +156,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 menu-card">
+                <div class="col-sm-6 col-md-3 col-lg-3 menu-card">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Main Course</h1>
@@ -173,7 +168,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 menu-card">
+                <div class="col-sm-6 col-md-3 col-lg-3 menu-card">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Noodles</h1>
@@ -185,7 +180,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 menu-card">
+                <div class="col-sm-6 col-md-3 col-lg-3 menu-card">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Salads</h1>
@@ -197,7 +192,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 menu-card">
+                <div class="col-sm-6 col-md-3 col-lg-3 menu-card">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png" class="menu-item-image w-100" />
                         <h1 class="menu-card-title">Desserts</h1>
@@ -212,21 +207,25 @@
             </div>
         </div>
     </div>
-    <div class="d-flex flex-row justify-content-center">
-        
+    <div>
+      <a href="#bannerSection"> <button id="scrollToTopBtn" onclick="scrollToTop()">&#8593;</button></a>
+    </div>
+    <div class="d-flex flex-row justify-content-center">        
         <img src="emojis1.jfif" width="15%" height="30px"/>
         <img src="emojis1.jfif" width="15%" height="30px"/>
     </div>
+    <h4 class="text-center" style="color:rgb(100, 100, 17)">Menu</h4>
+    <div>
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Non Veg Starters
+              <i class="fas fa-hand-point-right" style="color: gold; margin-right:2px"></i> Non Veg Starters
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <div class="d-flex flex-row justify-content-center">
+                <div class="d-flex flex-row menu-accordion">
                   <div class="row">
                 <ol style="padding-right: 100px;" class="col-12 col-md-6">
                     <li data-toggle="tooltip" data-placement="left" title="Click  to Order" onclick="prompt('Your order has been confirmed please enter your address')">Chicken Spring Rolls <strong>$120</strong></li>
@@ -283,7 +282,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Veg Starters
+              <i class="fas fa-hand-point-right" style="color: gold; margin-right:2px"></i>Veg Starters
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -306,21 +305,21 @@
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner" style="width:400px; height:200px;">
-                          <div class="carousel-item active">
+                          <div class="carousel-item active cri">
                             <img src="nonveg1.jpeg" class="d-block w-100" alt="..." style="background-color: rgba(0,0,0,0.5);">
                             <div class="carousel-caption d-none d-md-block">
                               <h5>Chilli Prawns</h5>
                               <p>Slightly roasted and Served Fresh</p>
                             </div>
                           </div>
-                          <div class="carousel-item" style="width:400px; height:200px;">
+                          <div class="carousel-item cri" style="width:400px; height:200px;">
                             <img src="nonveg2.jfif" class="d-block w-100" alt="..." >
                             <div class="carousel-caption d-none d-md-block">
                               <h5>Chicken Magestic</h5>
                               <p>Yumm Yumm!!!</p>
                             </div>
                           </div>
-                          <div class="carousel-item" style="width:400px; height:200px;">
+                          <div class="carousel-item cri" style="width:400px; height:200px;">
                             <img src="nonveg3.png" class="d-block w-100" alt="..." >
                             <div class="carousel-caption d-none d-md-block">
                               <h5>Chicken Manchurian</h5>
@@ -345,7 +344,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Noodles
+              <i class="fas fa-hand-point-right" style="color: gold; margin-right:2px"></i>Noodles
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -407,7 +406,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Desserts
+                <i class="fas fa-hand-point-right" style="color: gold; margin-right:2px"></i>  Desserts
               </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -461,8 +460,7 @@
                           <span class="visually-hidden">Next</span>
                         </button>
                       </div>
-                </div>
-                
+                </div>                
               </div>
               </div>
             </div>
@@ -470,7 +468,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Soups
+                <i class="fas fa-hand-point-right" style="color: gold; margin-right:2px"></i>  Soups
               </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -532,7 +530,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                Sea Food
+                <i class="fas fa-hand-point-right" style="color: gold; margin-right:2px"></i>  Sea Food
               </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -651,6 +649,53 @@
             </div>
         </div>
     </div>
+    <section id="testimonial">
+      <div class="testimonial-section wrapper">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 text-center pb-4">
+              <h2 style="color:rgb(198, 198, 58);">Testimonial</h2>
+            </div>
+            <div class="col-sm-12 col-lg-10">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner" >
+                    <div class="carousel-item cl active" style="color:gold">
+                      <div class="carousel-caption">
+                      <img src="review-1.jpg" class="img-fluid" alt="...">
+                      <p style="color:gold">Far far away, behind the word mountains, far from countries Vokalia 
+                          and Constainsia, there live the blind texts.</p>
+                          <h5 style="color:gold">Johnthan Doe - UX Designer</h5>
+                          </div>
+                    </div>
+                    <div class="carousel-item cl ">
+                      <div class="carousel-caption">
+                      <img src="review-2.jpg" class="img-fluid" alt="...">
+                      <p style="color:gold">Far far away, behind the word mountains, far from countries Vokalia 
+                          and Constainsia, there live the blind texts.</p>
+                          <h5 style="color:gold">Johnthan Doe - UX Designer</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item cl">
+                      <div class="carousel-caption">
+                      <img src="review-3.jpg" class="img-fluid" alt="...">
+                      <p style="color:gold">Far far away, behind the word mountains, far from countries Vokalia 
+                          and Constainsia, there live the blind texts.</p>
+                          <h5 style="color:gold">Johnthan Doe - UX Designer</h5>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="thanking-customers-section pt-5 pb-5">
         <div class="container">
             <div class="row">
@@ -704,7 +749,7 @@
         </div>
     </div>
    
-    <div class="footer-section pt-5 pb-5">
+    <!-- <div class="footer-section pt-5 pb-5">
       <div class="container">
           <div class="row">
               <div class="col-12 text-center">
@@ -735,13 +780,51 @@
               </div>
           </div>
       </div>
-  </div>
-  <div>
-    <a href="#bannerSection"> <button id="scrollToTopBtn" onclick="scrollToTop()" style="background-color: yellow; border-radius: 50%; padding:10px; padding-left: 15px; padding-right: 15px;
-    font-size: 30px; font-weight: bold; border: none; position: fixed;
-  bottom: 20px;
-  right: 30px;">&#8593;</button></a>
-  </div>
+  </div> -->
+  <div class="footer-section pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+          
+            <div class="col-12 text-center">
+              
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" class="food-munch-logo" />
+                <h1 class="footer-section-mail-id">orderfood@foodmunch.com</h1>
+                <p class="footer-section-address">
+                    <i class="fas fa-map-marker-alt"></i> 123 Ayur Vigyan Nagar, New Delhi, India.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 subfooter">
+            <div class="col-md-4">
+                <h4>Opening Hours</h4>
+                <div class=" ml-2" >
+                  <img src="bird.gif" height="50px" width="80px"/>
+                </div>
+                <img src="we-are-open-open.gif" height="100px" width="150px"/>
+                <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 10:00 PM</p>
+                <p> <i class="fas fa-clock"></i>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Contact Information</h4>
+                
+                <p><i class="fas fa-phone-alt"></i> Phone: +91 1234567890</p>
+                <p><i class="fas fa-envelope"></i> Email: info@foodmunch.com</p>
+                <hr style="border-style: solid; border-color:rgb(239, 239, 225); border-width: 2px; width:20vw;"/>
+                
+                <hr style="border-style: solid; border-color:rgb(235, 235, 198); border-width: 2px; width:30vw;"/>
+                <hr style="border-style: solid; border-color:rgb(220, 220, 184); border-width: 2px; width:40vw;"/>
+                <hr style="border-style: solid; border-color:rgb(216, 216, 190); border-width: 2px; width:50vw;"/>
+                <hr style="border-style: solid; border-color:rgb(234, 234, 196); border-width: 2px; width:60vw;"/>
+            </div>
+            <div class="col-md-4">
+                <h4>Follow Us</h4>
+                <p><i class="fab fa-facebook" class="footer-icons" style="font-size: larger;"></i>Facebook: <a href="https://www.facebook.com/foodmunch">foodmunch</a></p>
+                <p><i class="fab fa-instagram" class="footer-icons" style="font-size: larger;"></i>Instagram: <a href="https://www.instagram.com/foodmunch">foodmunch</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
     <div class="modal fade " id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-with-bg-image" role="document">
           <div class="modal-content">

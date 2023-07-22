@@ -1,8 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+.body{
+    position: static;
+}
+:root{
+    --primary-color:#F5C332;
+    --secondary-color:#231E41;
+    --white-color:#fff;
+    --black-color:#1c1c1c;
+    /*text color variable*/
+    --text-primary: #F5C332;
+    --text-secondary: #231E41;
+    --text-white: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+}
+@media(max-width:991px){
+    .testimonial-section .cl .carousel-caption p{
+        padding: 0;
+        font-size: 1.1rem;
+    }
+    .testimonial-section .carousel-indicators{
+        bottom: -3.9125rem;
 
+    }
+}
+@media (max-width:576px){
+    .testimonial-section .wrapper{
+        padding: 4rem 0 5rem;
+    }
+    .testimonial-section .cl{
+        padding: 11rem 3.125rem;
+
+    }
+    .testimonial-section .carousel-indicators{
+        bottom: -4.9125rem;
+    }
+}
+@media(max-width:330px){
+    /*carousel design*/
+    .testimonial-section .cl{
+        padding: 13rem 3.125rem;
+    }
+}
+#scrollToTopBtn.show {
+    opacity: 1; /* When the .show class is added, the button will become visible */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 .food-munch-logo {
     width: 140px;
     height: 70px;
+}
+.wrapper{
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+
 }
 @media screen and (min-width:576px){
     #video-embed{
@@ -19,6 +78,12 @@
         width:400px;
         height: 200px;
     }
+    .banner-heading{
+        font-size: 10px;
+    }
+    .menu-accordion{
+        justify-content: center;
+    }
 }
 li:hover{
 color:#d0b200;
@@ -29,6 +94,9 @@ color:#d0b200;
     background-position: center;
 }
 @media screen and (max-width:576px){
+    .banner-heading{
+        font-size: 10px;
+    }
     .cr-inner{
         width: 50vw;
         height: 30vh;
@@ -50,26 +118,49 @@ color:#d0b200;
     color: #323f4b;
     font-family: "Roboto";
     font-weight: bold;
+    margin-left: 2px;
+    padding: 5px;
 }
 
 #navItem2 {
     color: #323f4b;
     font-family: "Roboto";
     font-weight: bold;
+    margin-left: 2px;
+    padding: 5px;
 }
 
 #navItem3 {
     color: #323f4b;
     font-family: "Roboto";
     font-weight: bold;
+    margin-left: 2px;
+    padding: 5px;
 }
 
 #navItem4 {
     color: #323f4b;
     font-family: "Roboto";
     font-weight: bold;
+    margin-left: 2px;
+    padding: 5px;
 }
-
+#scrollToTopBtn {
+    display: block;
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    opacity: 0; /* Start with 0 opacity, button will be hidden */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect for the opacity property */
+  }
 .banner-section-bg-container {
     background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
     height: 100vh;
@@ -136,8 +227,19 @@ color:#d0b200;
     border-width: 1px;
     border-color: #e5eaf4;
     border-radius: 16px;
+    transition: color 0.3s, transform 0.3s;
 }
-
+.wcu-card:hover{
+    text-align: center;
+    background-color: rgb(243, 243, 187);
+    border-style: solid;
+    border-width: 1px;
+    
+    border-radius: 16px;
+    transition: color 0.3s, transform 0.3s;
+    color: #333; /* Change the text color on hover */
+    transform: scale(1.1);
+}
 .wcu-card-image {
     width: 87px;
     height: 90px;
@@ -163,7 +265,7 @@ color:#d0b200;
 }
 
 .explore-menu-section {
-    background-color: white;
+    background-color: rgba(243, 243, 222, 0.397);
 }
 
 .menu-section-heading {
@@ -193,11 +295,16 @@ color:#d0b200;
 }
 
 .menu-item-card {
+    background-color: white;
     border-radius: 16px;
+    transition: color 0.3s, transform 0.3s;
 }
-.menu-card :hover{
+.menu-card :hover {
     border-radius: 16px;
-    border:3px solid yellow;
+   
+    transition: color 0.3s, transform 0.3s;
+    color: #333; /* Change the text color on hover */
+    transform: scale(1.1);
 }
 .healthy-food-section {
     background-color: #d0b2001a;
@@ -324,6 +431,19 @@ color:#d0b200;
     background-color: #e9ca1c;
     border-radius: 10px;
 }
+#navItem5{
+    color:orange;
+    padding: 5px;
+    margin-left: 2px;
+    font-family: "Roboto";
+    font-weight: bold;
+    
+}
+#navItem5 :hover{
+    color:rgb(91, 63, 11);
+    
+    
+}
 #navItem3:hover{
     color:orange;
     font-weight: bold;
@@ -366,8 +486,10 @@ color:#d0b200;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as desired */
+    background-color: rgba(0, 0, 0, 0.529);
+    border-radius: 50%;
   }
+  
 .follow-us-icon-container :hover{
     background-color: #ebcc32;
     width: 80px;
@@ -382,4 +504,56 @@ color:#d0b200;
 
 .subfooter{
     color:#959ead;
+}
+.footer-icons{
+    font-size: larger;
+    border-style:solid;
+}
+.footer-icons :hover{
+    color:yellow;
+}
+
+.testimonial-section{
+    background-image: url("testimonial.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 95vh;
+    background-repeat: no-repeat;
+    color:rgb(243, 243, 105);
+    /* color: var(--primary-color); */
+}
+.testimonial-section .cl {
+    /* margin-top: 1rem; */
+    padding: 10rem 3.125rem;
+   margin-bottom: 1rem;
+    border-radius:50%;
+    text-align: center;
+opacity: 1;
+color:rgb(243, 243, 105);
+
+} 
+.testimonial-section .cl ::before{
+    background-color: rgb(255, 253, 253);
+}
+.testimonial-section .cl img{
+    max-width: 5rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
+    border: .125rem solid var(--primary-color);
+}
+.testimonial-section .cl .carousel-caption p{
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding: o.625rem 11%;
+}
+.testimonial-section .carousel-indicators{
+    bottom: -4.9125rem;
+    
+
+}
+.testimonial-section .carousel-indicators button{
+    width: .9375rem;
+    height: .9375rem;
+    border-radius: 50%;
+    color: #d0b200;
 }

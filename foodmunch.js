@@ -25,6 +25,7 @@ $(document).ready(function() {
     let address=prompt('Your order has been confirmed please eneter your your address')
     if(address!==null){
       alert(`Thank you for ordering 
+      Go and redeem your gift with${Math.ceil(Math.random)}abc#
     We will shortly place your order at location ${address}
     hope you will enjoy the meal!!!
      happy Meal;;;`)
@@ -87,7 +88,7 @@ function placeOrder() {
   $(".selected-food-items").html("Selected Food Items: " + selectedFoodItems.join(", "));
 
  
-  var message = "Order Placed!\n\nName: " + name + "\nEmail: " + email + "\nSelected Food Items: " + selectedFoodItems.join(", ") + "\nPayment Method: " + paymentMethod + "\nDelivery Address: " + address +"Thank You For Ordering Enjoy the taste!!! have a Nice day!!!";
+  var message = "Order Placed!\n\nName: " + name + "\nEmail: " + email + "\nSelected Food Items: " + selectedFoodItems.join(", ") + "\nPayment Method: " + paymentMethod + "\nDelivery Address: " + address +"Thank You For Ordering Enjoy the taste!!! have a Nice day!!! Go and redeem your gift";
   alert(message);
 //  alert(<img src="food truck.jpg"/>)
  

@@ -67,11 +67,16 @@
     padding-bottom: 6.25rem;
 
 }
-@media screen and (min-width:576px){
+@media screen and(min-width:768px){
     #video-embed{
+        height:80vh;
+    }
+}
+@media screen and (min-width:576px){
+    /* #video-embed{
         width:30vw;
         height:40vh;
-    }
+    } */
     .cr-inner{
         /* style="width:400px; height:200px;" */
         width:400px;
@@ -433,7 +438,7 @@ color:#d0b200;
 }
 
 #navItem5{
-    color:orange;
+    color:rgb(0, 0, 0);
     padding: 5px;
     margin-left: 2px;
     font-family: "Roboto";
@@ -441,8 +446,8 @@ color:#d0b200;
     
 }
 #navItem5 :hover{
-    color:rgb(91, 63, 11);
-    
+    color:rgb(44, 31, 6);
+   
     
 }
 #navItem3:hover{
@@ -457,28 +462,7 @@ color:#d0b200;
     color:orange;
     font-weight: bold;
 }
-.glitter {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: gold;
-    border-radius: 50%;
-    opacity: 0.7;
-    animation-name: glitterAnimation;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  
-  @keyframes glitterAnimation {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(100px, 100px);
-    }
-  }
-  
+
   
   .carousel-item::before {
     content: "";
@@ -564,4 +548,7 @@ color:rgb(243, 243, 105);
     max-width: 100vw;
     margin: 10px;
     height: 50vh;
+  }
+  #testimonial2{
+    background-color: rgba(234, 217, 123, 0.647);
   }

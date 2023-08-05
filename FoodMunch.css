@@ -396,6 +396,17 @@ color:#d0b200;
     font-size: 28px;
     font-weight: 700;
 }
+.follow-us-icon-container :hover{
+    background-color: #ebcc32;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+   color:black;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
 
 .follow-us-icon-container {
     background-color: #faf7e8;
@@ -434,7 +445,7 @@ color:#d0b200;
 #navItem4:hover{
     color:orange;
     font-weight: bold;
-    
+    text-decoration: underline;
 }
 
 #navItem5{
@@ -453,14 +464,17 @@ color:#d0b200;
 #navItem3:hover{
     color:orange;
     font-weight: bold;
+    text-decoration: underline;
 }
 #navItem2:hover{
     color:orange;
     font-weight: bold;
+    text-decoration: underline;
 }
 #navItem1:hover{
     color:orange;
     font-weight: bold;
+    text-decoration: underline;
 }
 
   
@@ -471,11 +485,13 @@ color:#d0b200;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.529);
+    background-color: rgba(55, 54, 48, 0.774);
     border-radius: 50%;
+    border-style: solid;
+    border-color: #fbdc30;
   }
   
-.follow-us-icon-container :hover{
+/* .follow-us-icon-container :hover{
     background-color: #ebcc32;
     width: 80px;
     height: 80px;
@@ -485,7 +501,7 @@ color:#d0b200;
     padding-bottom: 14px;
     padding-right: 16px;
     padding-left: 22px;
-}
+} */
 
 .subfooter{
     color:#959ead;
@@ -504,7 +520,7 @@ color:#d0b200;
     background-size: cover;
     height: 95vh;
     background-repeat: no-repeat;
-    color:rgb(243, 243, 105);
+    color:rgb(238, 238, 229);
     /* color: var(--primary-color); */
 }
 .testimonial-section .cl {
@@ -514,7 +530,7 @@ color:#d0b200;
     border-radius:50%;
     text-align: center;
 opacity: 1;
-color:rgb(243, 243, 105);
+color:rgb(214, 214, 206);
 
 } 
 .testimonial-section .cl ::before{
@@ -551,4 +567,16 @@ color:rgb(243, 243, 105);
   }
   #testimonial2{
     background-color: rgba(234, 217, 123, 0.647);
+  }
+  .main-footer :hover{
+ color:white;
+  }
+  .open :hover{
+    color: white;
+  }
+  .contact :hover{
+    color: white;
+  }
+  .profile :hover{
+    color:white;
   }
